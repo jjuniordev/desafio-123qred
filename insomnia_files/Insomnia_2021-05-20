@@ -1,0 +1,254 @@
+_type: export
+__export_format: 4
+__export_date: 2021-05-20T16:43:11.220Z
+__export_source: insomnia.desktop.app:v2021.3.0
+resources:
+  - _id: req_2f2a6ea2c9c04da2987df69e92848b7c
+    parentId: fld_f94cc803ffe24ed0934be136821403b7
+    modified: 1621516412405
+    created: 1621488453372
+    url: localhost:8080/api/v1/client-questions/1
+    name: Questions
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1621488453372
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f94cc803ffe24ed0934be136821403b7
+    parentId: wrk_c8e2eff92ee64b6495efd5711503e174
+    modified: 1621469612185
+    created: 1621469612185
+    name: Personal
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1621469612186
+    _type: request_group
+  - _id: wrk_c8e2eff92ee64b6495efd5711503e174
+    parentId: null
+    modified: 1601387176942
+    created: 1601387176942
+    name: My Workspace
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_d619366b587f431f870f1b85e50d08ef
+    parentId: fld_f94cc803ffe24ed0934be136821403b7
+    modified: 1621516644956
+    created: 1621483799969
+    url: localhost:8080/api/v1/client-status/4
+    name: Status
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1621483799969
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ffe40670ebf84c33a22e901595e1212f
+    parentId: fld_f94cc803ffe24ed0934be136821403b7
+    modified: 1621516634430
+    created: 1621469628026
+    url: localhost:8080/api/v1/client-answer
+    name: Answers
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"clientID": 4,
+        	"data": [
+        		{
+        				"questionID": 1,
+        				"answerCod": 0
+        		},
+        		{
+        				"questionID": 2,
+        				"answerCod": 3
+        		},
+        		{
+        				"questionID": 3,
+        				"answerCod": 3
+        		},
+        		{
+        				"questionID": 4,
+        				"answerCod": 4
+        		}
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_585c12371ae54d7b8cc970b55f45d40f
+    authentication: {}
+    metaSortKey: -1621469628027
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_0b5459e9b648f96b259bb6182225caae52942889
+    parentId: wrk_c8e2eff92ee64b6495efd5711503e174
+    modified: 1601387177141
+    created: 1601387177141
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1601387177141
+    _type: environment
+  - _id: jar_0b5459e9b648f96b259bb6182225caae52942889
+    parentId: wrk_c8e2eff92ee64b6495efd5711503e174
+    modified: 1620839482176
+    created: 1601387177144
+    name: Default Jar
+    cookies:
+      - key: PHPSESSID
+        value: 42r7j7fe0b1ertevn30s56mg84
+        domain: ifcshop.com.br
+        path: /
+        secure: true
+        hostOnly: false
+        creation: 2020-09-29T18:53:16.923Z
+        lastAccessed: 2020-09-29T18:53:16.923Z
+        id: "2008126667083867"
+      - key: CPL
+        value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpbmZyYWNvbW1lcmNlLmNvbS5iciIsInN1YiI6IkluZnJhY29tbWVyY2UiLCJhdWQiOiJpZmNzaG9wLmNvbS5iciIsImlhdCI6MTYwMTQwNzcxMywiZGF0YSI6eyJ1aWQiOiJQeXVWcUp4cmFjeVgwcnF3NUlLUmdyc1puR3o5aUhDT3hjTnVCcDFqaE4wPSJ9fQ.Lgq_JNaIRfrSl6Se6xTe48cRbdWvIqcOodAJJ_LZn6w
+        expires: 2030-09-27T19:28:33.000Z
+        domain: ifcshop.com.br
+        path: /
+        secure: true
+        httpOnly: true
+        hostOnly: false
+        creation: 2020-09-29T19:28:33.495Z
+        lastAccessed: 2020-09-29T19:28:33.495Z
+        id: "48318921328618236"
+      - key: usrfgpt
+        value: "307280080001301601407713"
+        expires: 2030-09-27T19:28:33.000Z
+        domain: ifcshop.com.br
+        path: /
+        secure: true
+        httpOnly: true
+        hostOnly: false
+        creation: 2020-09-29T19:28:33.497Z
+        lastAccessed: 2020-09-29T19:28:33.497Z
+        id: "20438223915786735"
+      - key: ig_did
+        value: 6C60B461-0535-4884-A363-B699572AA1EC
+        expires: 2023-03-11T01:10:33.000Z
+        maxAge: 63072000
+        domain: instagram.com
+        path: /
+        secure: true
+        httpOnly: true
+        hostOnly: false
+        creation: 2021-03-11T01:10:34.646Z
+        lastAccessed: 2021-03-11T01:10:34.646Z
+        id: "4724085587364373"
+      - key: ig_nrcb
+        value: "1"
+        expires: 2022-03-11T01:10:33.000Z
+        maxAge: 31536000
+        domain: instagram.com
+        path: /
+        secure: true
+        hostOnly: false
+        creation: 2021-03-11T01:10:34.646Z
+        lastAccessed: 2021-03-11T01:10:34.646Z
+        id: "8173595208281761"
+      - key: csrftoken
+        value: 7obvhOFvzbPOgQEzN4EmPSyt3i3P4ilC
+        expires: 2022-03-10T01:10:34.000Z
+        maxAge: 31449600
+        domain: instagram.com
+        path: /
+        secure: true
+        hostOnly: false
+        creation: 2021-03-11T01:10:34.647Z
+        lastAccessed: 2021-03-11T01:10:34.647Z
+        id: "43671354936233797"
+      - key: mid
+        value: YEluCgAEAAHf3A0Q17TkqFm6EyEc
+        expires: 2023-03-11T01:10:34.000Z
+        maxAge: 63072000
+        domain: instagram.com
+        path: /
+        secure: true
+        hostOnly: false
+        creation: 2021-03-11T01:10:34.647Z
+        lastAccessed: 2021-03-11T01:10:34.647Z
+        id: "26832270354970067"
+      - key: PHPSESSID
+        value: 159n1vjck6307p660ep424die5
+        domain: marketplace-shopping-cart.airfox.localtest.me
+        path: /
+        hostOnly: true
+        creation: 2021-03-23T17:57:57.232Z
+        lastAccessed: 2021-03-23T17:57:57.232Z
+        id: "5832597902847898"
+      - key: PHPSESSID
+        value: bm4muiaiaq27aq7k6evspqada6
+        domain: localhost
+        path: /
+        hostOnly: true
+        creation: 2021-04-09T05:16:36.860Z
+        lastAccessed: 2021-04-09T05:16:36.860Z
+        id: "24503468692040187"
+      - key: 4d89cfc322ba16a802ac238ccdffe6f7
+        value: 132c42eb9824507d13782149c73eab26
+        domain: sit-cdccorp.viavarejo.com.br
+        path: /
+        secure: true
+        httpOnly: true
+        extensions:
+          - SameSite=None
+        hostOnly: true
+        creation: 2021-04-26T20:16:23.233Z
+        lastAccessed: 2021-05-12T17:11:22.171Z
+        id: "8830505953626171"
+      - key: bc5178f7c5ba7954f4d3823098d26242
+        value: b43b21d40680ffbb09286528b728c2bb
+        domain: sit-cdccorp.viavarejo.com.br
+        path: /
+        secure: true
+        httpOnly: true
+        extensions:
+          - SameSite=None
+        hostOnly: true
+        creation: 2021-04-29T15:32:24.065Z
+        lastAccessed: 2021-04-29T15:32:24.065Z
+        id: "578569773178828"
+    _type: cookie_jar
+  - _id: spc_f0fdc2adfff6435eb542742304a65df5
+    parentId: wrk_c8e2eff92ee64b6495efd5711503e174
+    modified: 1601387176947
+    created: 1601387176947
+    fileName: My Workspace
+    contents: ""
+    contentType: yaml
+    _type: api_spec
