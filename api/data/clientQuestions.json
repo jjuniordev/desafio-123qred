@@ -1,0 +1,39 @@
+{
+    "clientQuestions": {
+        "client": [
+            {
+                "clientID": 1,
+                "clientName": "Josh",
+                "hasAnswer": true
+            },
+            {
+                "clientID": 2,
+                "clientName": "Marta",
+                "hasAnswer": false
+            },
+            {
+                "clientID": 3,
+                "clientName": "Bruce",
+                "hasAnswer": false
+            }
+        ],
+        "questions": [
+            {
+                "questionID": 1,
+                "textQuestion": "Como você considera o momento atual da sua empresa?"
+            },
+            {
+                "questionID": 2,
+                "textQuestion": "Nos últimos 3 meses como foi o comportamento da sua empresa?"
+            },
+            {
+                "questionID": 3,
+                "textQuestion": "O motivo do empréstimo consiste em pagar dívidas?"
+            },
+            {
+                "questionID": 4,
+                "textQuestion": "Se o seu faturamento mensal duplicar, você aproveitaria para quitar seu empréstimo?"
+            }
+        ]
+    }
+}
